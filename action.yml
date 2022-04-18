@@ -1,0 +1,13 @@
+name: 'zenn-github-actions-sample'
+description: 'zennテックブログで解説用のアクションです。'
+inputs:
+  test-inputs:
+    description: "inputsのテストです"
+    required: true
+    default: "foo"
+outputs:
+  test-output:
+    description: 'outputsのテストです'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
